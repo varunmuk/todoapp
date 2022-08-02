@@ -2,9 +2,48 @@
 <html>
 <head>
     <title>Todo APP</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-Write your code here
+    <div>
+        <!-- Todo Input Search Start -->
+        <div class="search-container">
+            <div class="title">TODO APP</div>
+            <div class="todo-input-container">
+                <div class="todo-input"><input id="todo-input" type="text" placeholder="Add Todo"/></div>
+                <div class="todo-add-btn"><button id="add-btn" class="add-btn">Add</button></div>
+            </div>
+        </div>
+        <!-- Todo Input Search End -->
+        <div class="todo-list-container">
+            <!-- Todo Type Start -->
+            <ul class="todo-type-list" id="todo-type-list">
+                <li class="selected">ALL</li>
+                <li>COMPLETED</li>
+                <li>PENDING</li>
+            </ul>
+            <!-- Todo Type End -->
+            <!-- Todo List Start -->
+            <div class="todo-list" id="todo-list">
+                <div class="todo-row">
+                    <div class="checkmark">&#10003</div>
+                    <div class="todo-text">Buy the milk</div>
+                    <div class="remove-todo">&#10005</div>
+                </div>
+                <div class="todo-row">
+                    <div class="checkmark">&#10003</div>
+                    <div class="todo-text">Rent a car</div>
+                    <div class="remove-todo">&#10005</div>
+                </div>
+                <div class="todo-row selected">
+                    <div class="checkmark">&#10003</div>
+                    <div class="todo-text">Feed the cat</div>
+                    <div class="remove-todo">&#10005</div>
+                </div>
+            </div>
+            <!-- Todo List End -->
+        </div>
+    </div>
 </body>
 </html>
